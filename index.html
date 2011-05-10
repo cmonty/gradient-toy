@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 Gradients :: All Natural, Browser-based Gradients</title>
+		<link rel="stylesheet" href="style.css" media="screen">
+	</head>
+	<body>
+		<canvas id="gradient" width="300" height="100"></canvas>
+		<div id="stops">
+			<div data-stop="0" class="stop" id="stop-0"></div>
+			<div data-stop="1" class="stop" id="stop-1"></div>
+		</div><!-- /stops -->
+		<p><button id="new-stop">Add Stop</button></p>
+		<div class="picker">
+			<div class="color-wheel"></div>
+			<div id="cross-hair"></div>
+		</div> <!-- /picker -->
+		<div class="value">
+			<div id="value-slider"></div>
+		</div> <!-- /value -->
+		<form action="#">
+			<p>Color: <input type="text" value="" id="color-input" maxlength="6"></p>
+		</form>
+		<pre id="syntax">
+			<code data-browser="kit">background: -webkit-gradient(linear, left top, left bottom, from(<span class="from">#FFFFFF</span>), to(<span class="to">#000000</span>)<span class="color-stops"></span>);</code>
+			<code data-browser="moz">background: -moz-linear-gradient(90deg, <span class="from">#FFFFFF</span>, <span class="to">#000000</span><span class="color-stops"></span>);</code>
+			<code data-browser="fallback">background: <span class="from">#FFFFFF</span>;</code>
+		</pre>		
+		<script src="javascript/jquery-1.4.3.js"></script>
+		<script src="javascript/core.js"></script>
+		<script src="javascript/sandbox.js"></script>
+		<script src="javascript/modules/gradient.js"></script>
+		<script src="javascript/modules/picker.js"></script>
+		<script src="javascript/modules/parse.js"></script>
+	</body>
+</html>

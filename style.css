@@ -1,0 +1,75 @@
+/* Gradient Styles */
+
+#stops {
+	width:300px;
+	position:relative;
+}
+
+.stop {
+	position:absolute;
+	background-color:black;
+	width:10px;
+	height:10px;
+	cursor:default;
+	border:2px solid white;
+}
+
+.stop.select {
+	border:2px solid orange;
+}
+
+#stop-0 {
+	left:0;
+}
+
+#stop-1 {
+	left:293px;
+}
+
+.picker {
+	background-image:url('colorWheelValue.png');
+	position:relative;
+	width:150px;
+	height:150px;
+	float:left;
+}
+
+.color-wheel {
+	background-image: url('colorWheel.png');
+	width:150px;
+	height:150px;
+	cursor:default;
+	position:absolute;
+}
+
+#cross-hair {
+	width:4px;
+	height:4px;
+	background-color:white;
+	border:1px solid black;
+	position:relative;
+	top:72px;
+	left:72px;
+}
+
+.value {
+	height:150px;
+	width:15px;
+	border:2px solid white;
+	background: -webkit-gradient(linear, left bottom, left top, from(black), to(white));
+	background: -moz-linear-gradient(90deg, black, white);
+	float:left;
+	margin-left:15px;
+}
+
+#value-slider {
+	height:4px;
+	width:15px;
+	border:1px solid black;
+	background-color:white;
+	position:relative;
+	left:-1px;
+	top:0px;
+}
+
+p { clear:both; }
